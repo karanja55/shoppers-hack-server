@@ -1,10 +1,10 @@
 const express =require("express");
 const app = express();
 
-app.get("/",function (req, res) {
+app.get("/",function (req, res)  {
 // logic
 
-   res.send("hello clement");
+   res.json({message:"hello clement"});
 
 
 });
