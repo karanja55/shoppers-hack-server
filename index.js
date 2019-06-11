@@ -1,11 +1,13 @@
+require("dotenv").config();
 const express =require("express");
 const mysql =require("mysql");
 const app = express();
 const pool =mysql.createPool({
-    host:"localhost",
-    user:"foo",
-    password:"mufasa55",
-    database:"shoppers_hack"
+    
+    host:process.env.DB_HOST,
+    user:process.env.DB_USER,
+    password:process.env.DB_PASS,
+    database:process.env.DB_NAME
 
 });
 
