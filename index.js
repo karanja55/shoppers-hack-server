@@ -18,6 +18,23 @@ app.get("/api/suppliers",(req,res)=>{
             return res.status(500).json({error});
         }
         res.json(rows);
+    });app.get("/api/customers",(req,res)=>{
+    
+        pool.query("SELECT customer_id,customer_name,phone_no from customer",(error,rows)=>{
+            if(error){
+                return res.status(500).json({error});
+            }
+            res.json(rows);
+        });
+        app.get("/api/buy",(req,res)=>{
+    
+            pool.query("SELECT customer_id,supplier_id",(error,rows)=>{
+                if(error){
+                    return res.status(500).json({error});
+                }
+                res.json(rows);
+            });
+        });
     });
 });
 app.listen(9000,function(){
