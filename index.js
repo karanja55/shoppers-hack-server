@@ -9,7 +9,10 @@ const pool = mysql.createPool({
     password: process.env.DB_PASS,
     database: process.env.DB_NAME
 
+
 });
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.get("/api/suppliers", (req, res) => {
 
@@ -39,6 +42,30 @@ app.get("/api/buy", (req, res) => {
         }
         res.json(rows);
     });
+});
+
+//posting
+app.post("/api/suppliers:name", (req, res) => {
+
+    const supplier = req.body;
+    console.log(supplier);
+    if (!supplier.name) {
+        return res.status(400).json({ error: "invalid payload" });
+    }
+    pool.query(
+        "INSERT INTO supplier (supplier_name) values (?)",
+        [supplier.supplier_name],
+        (error, results) => {
+            if (error) {
+                return res.status(500).json({ error });
+
+            }
+            res.json(result.insert.id);
+
+        });
+
+    
+
 });
 
 app.listen(9000, function () {
