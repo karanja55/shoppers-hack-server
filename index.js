@@ -65,7 +65,7 @@ app.use(express.urlencoded({ extended: false }));
 
             });
         //posting
-        app.post("/api/suppliers:name", (req, res) => {
+        app.post("/api/customer:name", (req, res) => {
 
             const customer = req.body;
             console.log(customer);
@@ -73,7 +73,7 @@ app.use(express.urlencoded({ extended: false }));
                 return res.status(400).json({ error: "invalid payload" });
             }
             pool.query(
-                "INSERT INTO supplier (customwer_name) values (?)",
+                "INSERT INTO customer (customer_name) values (?)",
                 [customer.customer_name],
                 (error, results) => {
                     if (error) {
