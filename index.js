@@ -81,16 +81,13 @@ app.use(express.urlencoded({ extended: false }));
 
                     }
                     res.json(result.insert.id);
-
-
-
-
-
                 });
 
             app.listen(9000, function () {
                 console.log("app listening on port 9000");
 
+            
+
             });
-
-
+        }
+        
