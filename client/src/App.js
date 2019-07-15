@@ -1,23 +1,39 @@
 import React from 'react';
-import supplier from './suppliers.js';
+import NavBar from "./NavBar";
+import suppliers from './suppliers.js';
 import './App.css';
+
+
+const supplier = [
+  {
+      supplier_id:'trap',
+      supplier_name:'5645676',
+      Image:'jpeg5',
+      price:5600,
+      phone_no:56542
+
+  },
+  {
+    supplier_id:'trap',
+      supplier_name:'5645676',
+      Image:'jpeg5',
+      price:5600,
+      phone_no:56542
+
+  },
+      
+  
+];
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <navbar/>
+        <header/>
+  <p>Shoppers hack </p>
+        
       </header>
     </div>
   );
