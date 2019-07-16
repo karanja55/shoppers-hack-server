@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/karanja55/shoppers-hack-server#readme",
   "dependencies": {
+    "@reach/router": "^1.2.1",
     "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "mysql": "^2.17.1"
