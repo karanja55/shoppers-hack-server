@@ -1,7 +1,7 @@
 import React from "react";
 import supplier from "./supplier";
 
-function suplier({ supliers }) {
+function suplier({ suppliers }) {
     return (
         <div className="mvls-container">
             <div className="mvls-supplier-list">

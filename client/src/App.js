@@ -39,7 +39,19 @@ function App() {
       </header>
       
 
+   
+    <div className="App">
+      <footer className="container">
+      </footer>
+        <p>Where customers meet the suppliers</p>
+    
+
     </div>
+    <div className="Image">
+      
+    </div>
+    </div>
+
   );
 }
 

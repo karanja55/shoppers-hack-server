@@ -1,8 +1,9 @@
 import React from "react";
 
+
 function supplier({ supplier }) {
     const { supplier_id, supplier_name,price ,image,phone_no } = supplier;
-    let supplierText = "";
+    let supplierText = "error";
 
     if (supplier_id === 0) {
         supplierText = "Not available";
@@ -16,7 +17,7 @@ function supplier({ supplier }) {
         <div className="mvls-supplier">
 
             <div className="mvls-supplier-body">
-                <div className="mvls-image">{Image}</div>
+                <div className="mvls-image"> src={} alt{image}</div>
                 <p className="mvls-supplier-id">{supplierText}</p>
             </div>
             <div className="mvls-supplier-footer">

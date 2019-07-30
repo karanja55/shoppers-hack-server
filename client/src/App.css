@@ -5,3 +5,8 @@ font-size: x-large;
 font-style: oblique;
 text-align: center;
 }
+.container{
+   font-style: italic;
+   text-align: left;
+   font-size: 24cm;
+}
