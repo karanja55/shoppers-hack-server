@@ -4,10 +4,17 @@ import suppliers from './suppliers.js';
 import './App.css';
 
 
+
+
+
+
+
+
+
 const supplier = [
   {
     supplier_id: 'trap',
-    supplier_name: '5645676',
+    supplier_name: 'eugene',
     Image: 'jpeg5',
     price: 5600,
     phone_no: 56542
@@ -15,7 +22,7 @@ const supplier = [
   },
   {
     supplier_id: 'trap',
-    supplier_name: '5645676',
+    supplier_name: 'bob',
     Image: 'jpeg5',
     price: 5600,
     phone_no: 56542
@@ -41,15 +48,14 @@ function App() {
 
    
     <div className="App">
+      
       <footer className="container">
       </footer>
         <p>Where customers meet the suppliers</p>
     
 
     </div>
-    <div className="Image">
-      
-    </div>
+  
     </div>
 
   );

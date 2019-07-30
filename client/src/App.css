@@ -10,3 +10,6 @@ text-align: center;
    text-align: left;
    font-size: 24cm;
 }
+.ss-body{
+   display: flexbox
+}
