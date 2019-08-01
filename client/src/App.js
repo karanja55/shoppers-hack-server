@@ -1,14 +1,8 @@
 import React from 'react';
 import NavBar from "./NavBar";
 import suppliers from './suppliers.js';
+import { Router } from "@reach/router";
 import './App.css';
-
-
-
-
-
-
-
 
 
 const supplier = [
@@ -39,13 +33,22 @@ function App() {
       <header className="App-header">
         <navbar />
 
-        <p>Shoppers hack
+        <p>
+        <ol>Shoppers hack</ol>
+        <ol>Shoppers hack</ol>
     </p>
+    
 
 
       </header>
-      
 
+     
+<div>
+  <button>supplier_453s</button>
+</div>
+<div>
+  
+</div>
    
     <div className="App">
       
